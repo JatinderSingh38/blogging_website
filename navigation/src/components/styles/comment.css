@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.comment-box {
+    width: 20rem;
+    height: 10rem;
+    margin: auto;
+    background-color: #c2bfbf;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow: auto;
+    transition: box-shadow 0.3s ease-in-out;
+    position: relative;
+}
+
+.comment-box:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.comment-box textarea {
+    width: calc(100% - 40px);
+
+    resize: none;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 14px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.comment-box textarea:focus {
+    border-color: #4CAF50;
+}
+
+.submit-button {
+    display: inline-block;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+    background-color: #4CAF50;
+    animation: flicker 3s infinite alternate, glow 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+    0% {
+        background-color: #4CAF50;
+        /* Green */
+    }
+
+    50% {
+        background-color: #F44336;
+        /* Red */
+    }
+
+    100% {
+        background-color: #2196F3;
+        /* Blue */
+    }
+}
+
+@keyframes glow {
+    0% {
+        transform: translateY(-50%);
+        box-shadow: 0 0 5px 5px #4CAF50;
+    }
+
+    50% {
+        transform: translateY(50%);
+        box-shadow: 0 0 5px 5px #F44336;
+    }
+
+    100% {
+        transform: translateY(-50%);
+        box-shadow: 0 0 5px 5px #2196F3;
+    }
+}
+
+.submit-button:hover {
+    animation: none;
+    background-color: #45a049;
+}
+
+.comments {
+    margin-top: 20px;
+}
+
+.commentt {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    color: #333;
+    /* Change comment text color */
+}
+
+.comment p {
+    margin: 0;
+}
