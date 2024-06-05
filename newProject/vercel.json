@@ -1,15 +1,9 @@
 {
     "version": 2,
-    "builds": [
+    "rewrites": [
         {
-            "src": "indexnew.js",
-            "use": "@vercel/node"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "indexnew.js"
+            "source": "/(.*)",
+            "destination": "/indexnew.js"
         }
     ]
 }
