@@ -5,7 +5,7 @@
   "main": "indexnew.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon indexnew.js"
+    "start": "node indexnew.js"
   },
   "keywords": [],
   "author": "",
