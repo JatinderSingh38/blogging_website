@@ -5,6 +5,8 @@
   "main": "indexnew.js",
   "type": "module",
   "scripts": {
+    "dev": "next dev",
+    "build": "next build",
     "start": "node indexnew.js"
   },
   "keywords": [],
