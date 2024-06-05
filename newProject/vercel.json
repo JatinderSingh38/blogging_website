@@ -2,7 +2,7 @@
     "version": 2,
     "rewrites": [
         {
-            "source": "indexnew.js",
+            "source": "/(.*)",
             "destination": "indexnew.js"
         }
     ]
