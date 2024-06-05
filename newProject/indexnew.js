@@ -37,30 +37,4 @@ app.listen(port, () => {
 })
 
 
-// import mongoose from "mongoose";
-// import express from "express";
-// import authRouter from "./routes/auth.js";
-// import dotenv from "dotenv";
-// import cors from "cors";
 
-// const app = express();
-// dotenv.config();
-
-// const port = process.env.PORT || 5000; // Set default port if PORT is not defined in .env
-
-// app.use(cors());
-// app.use(express.json());
-// app.use("/", authRouter);
-
-// mongoose.connect(process.env.CONNECTION_STRING, {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true
-// }).then(() => {
-//     console.log("=================database connected===============");
-// }).catch((error) => {
-//     console.error("Database connection error:", error);
-// });
-
-// app.listen(port, () => {
-//     console.log(`Server is running on http://localhost:${port}`);
-// });
