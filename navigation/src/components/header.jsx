@@ -12,7 +12,7 @@ const Header = () => {
     const fetchPost = async () => {
         try {
 
-            const res = await axios.get(`http://localhost:5000/userprofile/${id}`);
+            const res = await axios.get(`https://blogging-website-q0a4.onrender.com/userprofile/${id}`);
             const postData = res.data;
             setFormData({ username: postData.UserName, email: postData.email, country: postData.country, pincode: postData.pincode, image: postData.image })
             console.log("printing userdetails", formData)
@@ -62,7 +62,7 @@ const Header = () => {
                             <i id="chat-icon" className="fa-brands fa-rocketchat" />
                         </p>
                         <div className="profile">
-                            <img className="profile-img" src={`http://localhost:5000/${formData.image}`} />
+                            <img className="profile-img" src={`https://blogging-website-q0a4.onrender.com/${formData.image}`} />
                             <Link to="/userprofile" ><p className="heading2 headingall">{username}</p></Link>
 
                             <i className="fa-solid fa-caret-down" onClick={dropDown} />
