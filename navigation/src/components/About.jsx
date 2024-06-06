@@ -197,7 +197,7 @@ const About = () => {
                                 posts.map(post => (
                                     <div className="post" key={post._id}>
                                         <div className="upperpost">
-                                            <img className="bg1" src={`http://localhost:5000/${post.image}`} />
+                                            <img className="bg1" src={`https://blogging-website-q0a4.onrender.com/${post.image}`} />
                                             {/* Displaying the title dynamically */}
                                             <p className="font2">Title:{post.title}</p>
                                             <p className="font2">Description:{post.description}</p>
