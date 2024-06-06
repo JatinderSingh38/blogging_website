@@ -8,7 +8,7 @@ const CreateBlog = () => {
 
     const handleSubmit = async () => {
         try {
-            const res = await axios.post('http://localhost:5000/createblog', formData, {
+            const res = await axios.post('https://blogging-website-q0a4.onrender.com/createblog', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
