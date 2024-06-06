@@ -22,6 +22,10 @@ const _dirname = dirname(_filename); // Using 'dirname' to get the directory nam
 // Serving static files from the 'uploads' directory
 app.use("/uploads", express.static(join(_dirname, "uploads")));
 
+app.get("/", (req, res) => {
+    res.send("Hello, World! The server is running.");
+});
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 mongoose.connect(process.env.CONNECTION_STRING, {
 
