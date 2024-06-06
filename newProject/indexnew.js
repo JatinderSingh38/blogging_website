@@ -23,7 +23,7 @@ const _dirname = dirname(_filename); // Using 'dirname' to get the directory nam
 app.use("/uploads", express.static(join(_dirname, "uploads")));
 
 app.get("/", (req, res) => {
-    res.send("Hello, World! The server is running.");
+    res.send("Hello, World! The server 5000 is running.LIVE*");
 });
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
