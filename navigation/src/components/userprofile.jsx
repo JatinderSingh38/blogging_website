@@ -18,7 +18,7 @@ const Userprofile = () => {
     const fetchPost = async () => {
         try {
 
-            const res = await axios.get(`http://localhost:5000/userprofile/${id}`);
+            const res = await axios.get(`https://blogging-website-q0a4.onrender.com/userprofile/${id}`);
             const postData = res.data;
             setFormData({ username: postData.UserName, email: postData.email, country: postData.country, pincode: postData.pincode, image: postData.image })
             console.log("printing userdetails", formData)
@@ -35,7 +35,7 @@ const Userprofile = () => {
     const handleProfileUpload = async () => {
         const formData = new FormData();
         formData.append("image", profileImage);
-        await axios.patch(`http://localhost:5000/userimage/${id}`, formData)
+        await axios.patch(`https://blogging-website-q0a4.onrender.com/userimage/${id}`, formData)
         fetchPost();
     }
 
@@ -53,7 +53,7 @@ const Userprofile = () => {
         if (!usernameError && !emailError) {
             try {
 
-                const res = await axios.patch(`http://localhost:5000/userprofile/${id}`, formData)
+                const res = await axios.patch(`https://blogging-website-q0a4.onrender.com/userprofile/${id}`, formData)
                 //  console.log(res, 'asdfghj')
                 if (res.status === 200) {
                     alert("Updated successfully");
@@ -79,7 +79,7 @@ const Userprofile = () => {
                         <br />
                         <br />
                         <div style={{ width: "100px", height: "100px", margin: "auto", border: "1px solid #ccc", borderRadius: "50%", overflow: "hidden" }}>
-                            <img className="profile-img" src={`http://localhost:5000/${formData.image}`} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                            <img className="profile-img" src={`https://blogging-website-q0a4.onrender.com/${formData.image}`} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                         </div>
                         <br />
                         {isEditing ? (<>
