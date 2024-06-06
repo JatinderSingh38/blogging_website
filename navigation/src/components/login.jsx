@@ -38,7 +38,7 @@ const Login = () => {
             console.log("password:", formData.password);
             //  setFormData({ email: "", age: "" });
             try {
-                const res = await axios.post('http://localhost:5000/login', formData);
+                const res = await axios.post('https://blogging-website-q0a4.onrender.com/login', formData);
                 console.log(res.data, 'res.datares.data')
                 if (res.data.message === "User can login") {
                     const username = res.data.name;
