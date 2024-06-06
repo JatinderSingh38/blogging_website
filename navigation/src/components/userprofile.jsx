@@ -18,7 +18,7 @@ const Userprofile = () => {
     const fetchPost = async () => {
         try {
 
-            const res = await axios.get(`https://blogging-website-q0a4.onrender.com/userprofile/${id}`);
+            const res = await axios.get(`http://localhost:5000/userprofile/${id}`);
             const postData = res.data;
             setFormData({ username: postData.UserName, email: postData.email, country: postData.country, pincode: postData.pincode, image: postData.image })
             console.log("printing userdetails", formData)
