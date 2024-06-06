@@ -10,7 +10,7 @@ const HeaderLower = ({ searchResults, onSearch }) => {
     const handleSearch = async () => {
         try {
             // console.log("Search Term:", searchTerm);
-            const response = await axios.get(`http://localhost:5000/search`, {
+            const response = await axios.get(`https://blogging-website-q0a4.onrender.com/search`, {
                 params: {
                     searchTerm: searchTerm
                 }
@@ -30,7 +30,7 @@ const HeaderLower = ({ searchResults, onSearch }) => {
     const handleInputChange = async (value) => {
         setSearchTerm(value);
         try {
-            const response = await axios.get(`http://localhost:5000/search`, {
+            const response = await axios.get(`https://blogging-website-q0a4.onrender.com/search`, {
                 params: {
                     searchTerm: value
                 }
